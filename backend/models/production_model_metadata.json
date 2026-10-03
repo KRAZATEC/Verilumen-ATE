@@ -1,0 +1,114 @@
+{
+  "model_name": "Hist_Gradient_Boosting",
+  "scenario": "Scenario B - Measurement-Aware",
+  "training_timestamp": "2026-10-03T07:37:54.467251",
+  "numeric_features": [
+    "VDD_V",
+    "Temperature_C",
+    "Measured_Value",
+    "Lower_Limit",
+    "Upper_Limit",
+    "Retest_Count"
+  ],
+  "categorical_features": [
+    "Test_ID",
+    "Lot_ID",
+    "Wafer_ID"
+  ],
+  "target": "Result (FAIL=1, PASS=0)",
+  "validation_strategy": "StratifiedGroupKFold(5) grouped by Device_ID",
+  "best_metrics": {
+    "model_name": "Hist_Gradient_Boosting",
+    "accuracy": 0.9848,
+    "precision": 1.0,
+    "recall": 0.8125,
+    "f1_score": 0.8966,
+    "roc_auc": 0.9633,
+    "pr_auc": 0.9024,
+    "confusion_matrix": [
+      [
+        182,
+        0
+      ],
+      [
+        3,
+        13
+      ]
+    ],
+    "total_samples": 198,
+    "positive_samples": 16,
+    "negative_samples": 182,
+    "class_imbalance_ratio": 11.38
+  },
+  "all_metrics": {
+    "Logistic_Regression": {
+      "model_name": "Logistic_Regression",
+      "accuracy": 0.8788,
+      "precision": 0.3462,
+      "recall": 0.5625,
+      "f1_score": 0.4286,
+      "roc_auc": 0.7373,
+      "pr_auc": 0.4312,
+      "confusion_matrix": [
+        [
+          165,
+          17
+        ],
+        [
+          7,
+          9
+        ]
+      ],
+      "total_samples": 198,
+      "positive_samples": 16,
+      "negative_samples": 182,
+      "class_imbalance_ratio": 11.38
+    },
+    "Hist_Gradient_Boosting": {
+      "model_name": "Hist_Gradient_Boosting",
+      "accuracy": 0.9848,
+      "precision": 1.0,
+      "recall": 0.8125,
+      "f1_score": 0.8966,
+      "roc_auc": 0.9633,
+      "pr_auc": 0.9024,
+      "confusion_matrix": [
+        [
+          182,
+          0
+        ],
+        [
+          3,
+          13
+        ]
+      ],
+      "total_samples": 198,
+      "positive_samples": 16,
+      "negative_samples": 182,
+      "class_imbalance_ratio": 11.38
+    },
+    "Random_Forest": {
+      "model_name": "Random_Forest",
+      "accuracy": 0.9848,
+      "precision": 1.0,
+      "recall": 0.8125,
+      "f1_score": 0.8966,
+      "roc_auc": 0.9191,
+      "pr_auc": 0.8802,
+      "confusion_matrix": [
+        [
+          182,
+          0
+        ],
+        [
+          3,
+          13
+        ]
+      ],
+      "total_samples": 198,
+      "positive_samples": 16,
+      "negative_samples": 182,
+      "class_imbalance_ratio": 11.38
+    }
+  }
+}

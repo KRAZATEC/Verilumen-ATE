@@ -1,0 +1,27 @@
+{
+  "model_name": "Hist_Gradient_Boosting",
+  "scenario": "Scenario B - Measurement-Aware",
+  "metrics": {
+    "model_name": "Hist_Gradient_Boosting",
+    "accuracy": 0.8593,
+    "precision": 0.2758,
+    "recall": 0.892,
+    "f1_score": 0.4213,
+    "roc_auc": 0.9387,
+    "pr_auc": 0.7678,
+    "confusion_matrix": [
+      [
+        12122,
+        2017
+      ],
+      [
+        93,
+        768
+      ]
+    ],
+    "total_samples": 15000,
+    "positive_samples": 861,
+    "negative_samples": 14139,
+    "class_imbalance_ratio": 16.42
+  }
+}

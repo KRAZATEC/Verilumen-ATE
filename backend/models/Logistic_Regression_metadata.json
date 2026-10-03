@@ -1,0 +1,27 @@
+{
+  "model_name": "Logistic_Regression",
+  "scenario": "Scenario B - Measurement-Aware",
+  "metrics": {
+    "model_name": "Logistic_Regression",
+    "accuracy": 0.8788,
+    "precision": 0.3462,
+    "recall": 0.5625,
+    "f1_score": 0.4286,
+    "roc_auc": 0.7373,
+    "pr_auc": 0.4312,
+    "confusion_matrix": [
+      [
+        165,
+        17
+      ],
+      [
+        7,
+        9
+      ]
+    ],
+    "total_samples": 198,
+    "positive_samples": 16,
+    "negative_samples": 182,
+    "class_imbalance_ratio": 11.38
+  }
+}
